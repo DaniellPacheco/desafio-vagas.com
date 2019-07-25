@@ -1,0 +1,36 @@
+:root {
+    --cor-zero: #F2F2F2;
+    --cor-um: #2F3676;
+    --cor-dois:#DDE3E9;
+}
+
+.base {
+    width: 560px;
+    height: 794px;
+    background-color: var(--cor-zero);
+    box-shadow: 10px 22px 24px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cabecalho-container {
+    height: 300px;
+    background: var(--cor-um);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho-texto {
+    font-size: 23;
+    width: 219px;
+    height: 99px;
+    color: #fff;
+    font-weight: normal;
+    border: 1px solid red;
+}
+
+.cabecalho-img {
+    height: 167px;
+}
