@@ -11,11 +11,37 @@
     <title>Desafio Vagas.com</title>
 </head>
 <body>
-    <header class="base">
-        <div class="cabecalho-container">
-            <h1 class="cabecalho-texto">Formulário para compra de <strong class="cabecalho-texto-strong">Pacote de Stickers</strong></h1>
-            <img class="cabecalho-img" src="img/logo.png" alt="Logo de Caixa">
-        </div>
-    </header>
+     <section class="box">
+        <header class="box-header">
+            <h1 class="box-header-title">Formulário <br> para compra de <br> <strong class="title-strong">Pacote de Stickers</strong></h1>
+        </header>
+        <form class="box-form">
+
+            <label class="box-form-title">Quais stickers?</label>
+            <input type="checkbox" id="react" class="form-checkbox" name="react" value="react">
+            <label for="react">React</label>
+            <input type="checkbox" id="vue" class="form-checkbox" name="vue" value="vue">
+            <label for="vue">Vue</label>                
+            <input type="checkbox" id="angular" class="form-checkbox" name="angular" value="angular">
+            <label for="angular">Angular</label>
+
+
+            <label class="box-form-title box-form-title-padding">Quantos stickers de cada?</label>
+            <div class="box-form-svg">
+                <img src="img/remove.svg" alt="remover">
+                <input type="text" name="" class="box-form-svg-display" value="0">
+                <img src="img/add.svg" alt="adicionar">
+            </div>
+            
+            <label class="box-form-title box-form-title-padding">Observações:</label>
+            <textarea name="observacao" class="box-form-textarea"></textarea>
+            
+        </form>
+        <footer class="box-footer">
+            <div class="box-footer-margin">
+                <input type="submit" value="Enviar" class="box-footer-button">
+            </div>
+        </footer>
+     </section>
 </body>
 </html>

@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 200;
+  src: url("Inter-ExtraLight-BETA.woff2") format("woff2"),
+       url("Inter-ExtraLight-BETA.woff") format("woff");
+}
+
+@font-face {
     font-family: 'Inter';
     font-style:  normal;
     font-weight: 400;
