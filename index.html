@@ -28,20 +28,22 @@
 
             <label class="box-form-title box-form-title-padding">Quantos stickers de cada?</label>
             <div class="box-form-svg">
-                <img src="img/remove.svg" alt="remover">
-                <input type="text" name="" class="box-form-svg-display" value="0">
-                <img src="img/add.svg" alt="adicionar">
+                <img src="img/remove.svg" alt="remover" id="remove-button" onclick="removeOne()" name="remove-button">
+                <input type="text" name="box-form-display" class="box-form-svg-display" value="0" id="box-form-display">
+                <img src="img/add.svg" alt="adicionar" id="add-button"  onclick="addOne()" name="add-button">
             </div>
             
             <label class="box-form-title box-form-title-padding">Observações:</label>
-            <textarea name="observacao" class="box-form-textarea"></textarea>
+            <textarea name="box-form-textarea" class="box-form-textarea"></textarea>
             
         </form>
         <footer class="box-footer">
             <div class="box-footer-margin">
-                <input type="submit" value="Enviar" class="box-footer-button">
+                <p class="box-footer-p" id="box-footer-p"></p>
+                <input type="submit" name="box-footer-submit" value="Enviar" class="box-footer-button" id="box-footer-submit" onclick="submitForm()">
             </div>
         </footer>
      </section>
+     <script src="script.js"></script>
 </body>
 </html>

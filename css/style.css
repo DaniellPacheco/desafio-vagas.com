@@ -2,6 +2,7 @@
     --cor-zero: #F2F2F2;
     --cor-um: #2F3676;
     --cor-dois:#DDE3E9;
+    --cor-tres: #191847;
 }
 
 body {
@@ -20,6 +21,16 @@ body {
     border-radius: 8px;
     /* border: 1px solid red; */
     overflow: hidden;
+    animation: box-animation 0.5s ease-in-out;
+}
+
+@keyframes box-animation {
+    0% {
+        left: 10%;
+    }
+    100%{
+        left: 50%;
+    }
 }
 
 .box-header {
@@ -60,7 +71,10 @@ body {
 }
 
 .form-checkbox {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .form-checkbox + label::before {
@@ -140,7 +154,7 @@ body {
     margin-left: 30px;
     /* border: 1px solid red; */
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 15px;
 }
 
@@ -153,4 +167,14 @@ body {
     border-radius: 7px;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+.box-footer-button:hover {
+    background-color: var(--cor-tres);
+}
+
+.box-footer-p {
+    line-height: 5px;
+    color: #00c57c;
+    font-weight: 700;
 }
